@@ -1,5 +1,5 @@
-.NameEditor{
-  width: 300px;
+.NameEditor {
+  width: 400px;
   display: block;
   align-items: center;
   text-align: center;
@@ -14,13 +14,12 @@
 
 } */
 
-.NameEditor__button:hover{
- background-color: blue;
- color: aliceblue;
- border-bottom: none;
-
+.NameEditor__button:hover,
+.NameEditor__button:focus {
+  background-color: rgb(255, 17, 0);
+  color: yellow;
+  border-bottom: none;
 }
-
 
 .form {
   display: flex;
@@ -28,10 +27,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  padding: 30px;
-  border: solid 1px;
+  padding: 40px;
+
   margin-bottom: 15px;
-  box-shadow: 0px 0px 8px 0px #33333347;
 }
 
 .formLabel {
@@ -39,8 +37,6 @@
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  
-
 }
 
 .formName,
@@ -52,8 +48,6 @@
   border: solid 1px;
   border-radius: 2px;
   display: block;
-  
-  
 }
 
 .formBtn {
@@ -64,13 +58,14 @@
   padding: 15px;
   border: solid 1px;
   cursor: pointer;
-  background-color: #c9c8f1;
+
   border-radius: 2px;
   transition-duration: 250ms;
 }
 
-.formBtn:hover {
+.formBtn:hover,
+.formBtn:focus {
   transform: scale(1.1);
   background-color: blue;
-  color: white;
+  color: yellow;
 }

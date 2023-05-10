@@ -26,10 +26,10 @@ export const ContactList = () => {
       <ul className={css.ContactList_ul}>
         {visibleContacts.map((contact, id) => (
           <li className={css.ContactList_li} key={id}>
-            {contact.name}: {contact.number}
-            <button className={css.ContactList_button}
+            {contact.name}
+            <button
+              className={css.ContactList_button}
               type="button"
-              
               onClick={() => handleDelete(contact.id)}
             >
               Delete
